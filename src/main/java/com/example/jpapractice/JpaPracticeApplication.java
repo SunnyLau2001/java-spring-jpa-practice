@@ -16,7 +16,7 @@ public class JpaPracticeApplication {
 		SpringApplication.run(JpaPracticeApplication.class, args);
 	}
 
-	@Bean
+//	@Bean
 	public CommandLineRunner commandLineRunner(
 			AuthorRepository repository
 	) {

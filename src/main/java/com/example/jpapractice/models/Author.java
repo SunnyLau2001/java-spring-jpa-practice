@@ -2,24 +2,24 @@ package com.example.jpapractice.models;
 
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 import lombok.NoArgsConstructor;
+import lombok.experimental.SuperBuilder;
 
 import java.time.LocalDateTime;
 import java.util.List;
 
+//lombook
+@EqualsAndHashCode(callSuper = true)
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
+//jpa
 @Entity
-public class Author {
+public class Author extends BaseEntity{
 
-    @Id
-    @GeneratedValue
-    @Builder.Default
-    private Integer id = null;
 
     private String firstName;
 
